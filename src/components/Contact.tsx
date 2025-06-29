@@ -1,50 +1,59 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageCircle, Download } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  MessageCircle,
+  Download,
+} from "lucide-react";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Here you would typically handle form submission
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    alert('Thank you for your message! I\'ll get back to you soon.');
+    setFormData({ name: "", email: "", subject: "", message: "" });
+    alert("Thank you for your message! I'll get back to you soon.");
   };
 
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "aldi.isza@example.com",
-      href: "mailto:aldi.isza@example.com"
+      value: "aldyisza87@gmail.com",
+      href: "mailto:aldyisza87@gmail.com",
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
       value: "+62 812 3456 7890",
-      href: "tel:+6281234567890"
+      href: "tel:+6281234567890",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
       value: "Jakarta, Indonesia",
-      href: "#"
-    }
+      href: "#",
+    },
   ];
 
   return (
@@ -56,7 +65,8 @@ const Contact: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Ready to bring your mobile app idea to life? Let's discuss your project and create something amazing together.
+            Ready to bring your mobile app idea to life? Let's discuss your
+            project and create something amazing together.
           </p>
         </div>
 
@@ -66,7 +76,7 @@ const Contact: React.FC = () => {
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
               Let's Connect
             </h3>
-            
+
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start space-x-4">
@@ -85,7 +95,9 @@ const Contact: React.FC = () => {
                         {info.value}
                       </a>
                     ) : (
-                      <p className="text-gray-600 dark:text-gray-300">{info.value}</p>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        {info.value}
+                      </p>
                     )}
                   </div>
                 </div>
@@ -103,7 +115,7 @@ const Contact: React.FC = () => {
                 <MessageCircle className="mr-3" size={20} />
                 Chat on WhatsApp
               </a>
-              
+
               <a
                 href="https://docs.google.com/document/d/1qf2N0rsEIyiqTDvWO342Iy9w1VeZse5a1axlJUuJ8cQ/export?format=pdf"
                 download
@@ -120,7 +132,10 @@ const Contact: React.FC = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  >
                     Full Name
                   </label>
                   <input
@@ -134,9 +149,12 @@ const Contact: React.FC = () => {
                     placeholder="Your full name"
                   />
                 </div>
-                
+
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  >
                     Email Address
                   </label>
                   <input
@@ -153,7 +171,10 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -169,7 +190,10 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea
