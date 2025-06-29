@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import FloatingActionButton from "./components/FloatingActionButton";
+// import FloatingActionButton from "./components/FloatingActionButton";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,15 +25,14 @@ function App() {
 
   useEffect(() => {
     // Update document title and meta tags for SEO
-    document.title =
-      "Aldi Isza - Mobile Developer | React Native & Flutter Expert";
+    document.title = "Aldi Isza - Mobile Developer";
 
     // Add meta tags
     const metaTags = [
       {
         name: "description",
         content:
-          "Aldi Isza - Expert Mobile Developer specializing in React Native, Flutter, and iOS/Android development. Creating exceptional mobile experiences.",
+          "Aldi Isza - Expert Mobile Developer specializing Flutter, and iOS/Android development. Creating exceptional mobile experiences.",
       },
       {
         name: "keywords",
@@ -45,7 +44,7 @@ function App() {
       {
         property: "og:description",
         content:
-          "Expert Mobile Developer specializing in React Native, Flutter, and iOS/Android development.",
+          "Expert Mobile Developer specializing Flutter, and iOS/Android development.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: window.location.href },
@@ -54,7 +53,7 @@ function App() {
       {
         name: "twitter:description",
         content:
-          "Expert Mobile Developer specializing in React Native, Flutter, and iOS/Android development.",
+          "Expert Mobile Developer specializing Flutter, and iOS/Android development.",
       },
     ];
 
@@ -105,7 +104,7 @@ function App() {
         </main>
 
         <Footer />
-        <FloatingActionButton />
+        {/* <FloatingActionButton /> */}
       </div>
     </ThemeProvider>
   );

@@ -1,40 +1,40 @@
-import React from 'react';
-import { Github, Linkedin, Twitter, Instagram, Heart } from 'lucide-react';
-import { SocialLink } from '../types';
+import React from "react";
+import { Github, Linkedin, Twitter, Instagram, Heart } from "lucide-react";
+import { SocialLink } from "../types";
 
 const Footer: React.FC = () => {
   const socialLinks: SocialLink[] = [
     {
       name: "GitHub",
-      url: "https://github.com/aldiisza",
-      icon: "github"
+      url: "https://github.com/aldi-isza",
+      icon: "github",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/aldiisza",
-      icon: "linkedin"
+      url: "https://linkedin.com/in/aldi-isza",
+      icon: "linkedin",
     },
     {
       name: "Twitter",
       url: "https://twitter.com/aldiisza",
-      icon: "twitter"
+      icon: "twitter",
     },
     {
       name: "Instagram",
-      url: "https://instagram.com/aldiisza",
-      icon: "instagram"
-    }
+      url: "https://www.instagram.com/isza.dev/",
+      icon: "instagram",
+    },
   ];
 
   const getSocialIcon = (iconName: string) => {
     switch (iconName) {
-      case 'github':
+      case "github":
         return <Github size={20} />;
-      case 'linkedin':
+      case "linkedin":
         return <Linkedin size={20} />;
-      case 'twitter':
+      case "twitter":
         return <Twitter size={20} />;
-      case 'instagram':
+      case "instagram":
         return <Instagram size={20} />;
       default:
         return null;
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
   };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -53,10 +53,11 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
             <h3 className="text-2xl font-bold mb-4">Aldi Isza</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Mobile Developer passionate about creating exceptional user experiences 
-              and building high-performance applications that make a difference.
+              Mobile Developer passionate about creating exceptional user
+              experiences and building high-performance applications that make a
+              difference.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -79,19 +80,19 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {[
-                { name: 'Home', href: '#home' },
-                { name: 'About', href: '#about' },
-                { name: 'Projects', href: '#projects' },
-                { name: 'Skills', href: '#skills' },
-                { name: 'Experience', href: '#experience' },
-                { name: 'Contact', href: '#contact' }
+                { name: "Home", href: "#home" },
+                { name: "About", href: "#about" },
+                { name: "Projects", href: "#projects" },
+                { name: "Skills", href: "#skills" },
+                { name: "Experience", href: "#experience" },
+                { name: "Contact", href: "#contact" },
               ].map((link) => (
                 <li key={link.name}>
                   <button
                     onClick={() => {
                       const element = document.querySelector(link.href);
                       if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
+                        element.scrollIntoView({ behavior: "smooth" });
                       }
                     }}
                     className="text-gray-300 hover:text-white transition-colors duration-200"
@@ -111,10 +112,10 @@ const Footer: React.FC = () => {
               <p>📱 +62 812 3456 7890</p>
               <p>📍 Jakarta, Indonesia</p>
             </div>
-            
+
             <div className="mt-6">
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/628986110191"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors duration-200"
@@ -131,13 +132,13 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © {new Date().getFullYear()} Aldi Isza. All rights reserved.
             </p>
-            
+
             <div className="flex items-center text-gray-400 text-sm">
               <span>Made with</span>
               <Heart className="mx-2 text-red-500" size={16} />
               <span>using React & TypeScript</span>
             </div>
-            
+
             <button
               onClick={scrollToTop}
               className="mt-4 md:mt-0 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white text-sm rounded-lg transition-all duration-200"

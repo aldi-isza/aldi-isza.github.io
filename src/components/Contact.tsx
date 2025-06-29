@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
             {/* CTA Buttons */}
             <div className="space-y-4">
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/628986110191"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center px-6 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
@@ -117,7 +117,7 @@ const Contact: React.FC = () => {
               </a>
 
               <a
-                href="https://docs.google.com/document/d/1qf2N0rsEIyiqTDvWO342Iy9w1VeZse5a1axlJUuJ8cQ/export?format=pdf"
+                href="https://docs.google.com/document/d/1aX8Vys4mIAvmdwzAgie1IdCWD0qfTFrP/export?format=pdf"
                 download
                 className="w-full inline-flex items-center justify-center px-6 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
               >
