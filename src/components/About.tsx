@@ -1,28 +1,30 @@
-import React from 'react';
-import { Code, Smartphone, Zap, Users } from 'lucide-react';
+import React from "react";
+import { Code, Smartphone, Zap, Users } from "lucide-react";
 
 const About: React.FC = () => {
   const highlights = [
     {
       icon: <Smartphone className="w-8 h-8" />,
       title: "Mobile First",
-      description: "Specialized in creating responsive, mobile-optimized applications"
+      description:
+        "Specialized in creating responsive, mobile-optimized applications",
     },
     {
       icon: <Code className="w-8 h-8" />,
       title: "Clean Code",
-      description: "Writing maintainable, scalable, and well-documented code"
+      description: "Writing maintainable, scalable, and well-documented code",
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Performance",
-      description: "Optimizing applications for speed and efficiency"
+      description: "Optimizing applications for speed and efficiency",
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "User-Centric",
-      description: "Focusing on exceptional user experience and interface design"
-    }
+      description:
+        "Focusing on exceptional user experience and interface design",
+    },
   ];
 
   return (
@@ -39,39 +41,41 @@ const About: React.FC = () => {
           {/* Text Content */}
           <div>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              I'm a passionate Mobile Developer with a keen eye for creating exceptional user experiences. 
-              With years of experience in the field, I specialize in building high-performance mobile 
-              applications that not only look great but also deliver outstanding functionality.
+              I'm a passionate Mobile Developer with a keen eye for creating
+              exceptional user experiences. As a recent Informatics Engineering
+              graduate specializing in Flutter, I am dedicated to building
+              high-performance mobile applications that not only look great but
+              also deliver outstanding functionality.
             </p>
-            
+
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              My approach combines technical expertise with creative problem-solving to deliver solutions 
-              that exceed expectations. I stay current with the latest technologies and best practices 
-              to ensure every project meets modern standards.
+              My approach combines strong technical expertise with creative
+              problem-solving to deliver effective and modern solutions. I am
+              eager to apply my skills and contribute to innovative projects.
             </p>
 
             <div className="grid grid-cols-2 gap-6">
               <div>
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  5+ Years
+                  Recent Graduate
                 </h4>
                 <p className="text-gray-600 dark:text-gray-400">Experience</p>
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  50+ Projects
+                  2 Portfolios
                 </h4>
                 <p className="text-gray-600 dark:text-gray-400">Completed</p>
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  100% Client
+                  Strong Learning Agility
                 </h4>
                 <p className="text-gray-600 dark:text-gray-400">Satisfaction</p>
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  24/7 Support
+                  Proactive Learner
                 </h4>
                 <p className="text-gray-600 dark:text-gray-400">Available</p>
               </div>

@@ -1,63 +1,67 @@
-import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
-import { Project } from '../types';
+import React from "react";
+import { ExternalLink, Github } from "lucide-react";
+import { Project } from "../types";
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Mobile App",
-      description: "A full-featured e-commerce application with payment integration, user authentication, and real-time updates.",
-      technologies: ["React Native", "Node.js", "MongoDB", "Stripe"],
-      imageUrl: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+      title: "Online Shop Mobile App",
+      description:
+        "A full-featured e-commerce application with payment integration, user authentication, and real-time updates.",
+      technologies: ["Flutter", "Laravel", "Mysql", "PHP"],
+      imageUrl:
+        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
       demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example"
+      githubUrl: "https://github.com/aldi-isza/flutter-onlineshop",
     },
     {
       id: 2,
       title: "Food Delivery App",
-      description: "Real-time food delivery application with GPS tracking, payment processing, and order management.",
+      description:
+        "Real-time food delivery application with GPS tracking, payment processing, and order management.",
       technologies: ["Flutter", "Firebase", "Google Maps", "PayPal"],
-      imageUrl: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800",
+      imageUrl:
+        "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800",
       demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example"
+      githubUrl: "https://github.com/example",
     },
-    {
-      id: 3,
-      title: "Fitness Tracking App",
-      description: "Comprehensive fitness app with workout tracking, nutrition planning, and social features.",
-      technologies: ["React Native", "GraphQL", "PostgreSQL", "AWS"],
-      imageUrl: "https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg?auto=compress&cs=tinysrgb&w=800",
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example"
-    },
-    {
-      id: 4,
-      title: "Chat Application",
-      description: "Real-time messaging app with end-to-end encryption, group chats, and media sharing.",
-      technologies: ["Flutter", "Socket.io", "Redis", "Docker"],
-      imageUrl: "https://images.pexels.com/photos/1482061/pexels-photo-1482061.jpeg?auto=compress&cs=tinysrgb&w=800",
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example"
-    },
-    {
-      id: 5,
-      title: "Learning Management System",
-      description: "Educational platform with video streaming, progress tracking, and interactive assessments.",
-      technologies: ["React Native", "Django", "PostgreSQL", "AWS S3"],
-      imageUrl: "https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800",
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example"
-    },
-    {
-      id: 6,
-      title: "Travel Booking App",
-      description: "Complete travel booking solution with hotel reservations, flight booking, and itinerary planning.",
-      technologies: ["Flutter", "Node.js", "MySQL", "Stripe"],
-      imageUrl: "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800",
-      demoUrl: "https://demo.example.com",
-      githubUrl: "https://github.com/example"
-    }
+    // {
+    //   id: 3,
+    //   title: "Fitness Tracking App",
+    //   description: "Comprehensive fitness app with workout tracking, nutrition planning, and social features.",
+    //   technologies: ["React Native", "GraphQL", "PostgreSQL", "AWS"],
+    //   imageUrl: "https://images.pexels.com/photos/317157/pexels-photo-317157.jpeg?auto=compress&cs=tinysrgb&w=800",
+    //   demoUrl: "https://demo.example.com",
+    //   githubUrl: "https://github.com/example"
+    // },
+    // {
+    //   id: 4,
+    //   title: "Chat Application",
+    //   description: "Real-time messaging app with end-to-end encryption, group chats, and media sharing.",
+    //   technologies: ["Flutter", "Socket.io", "Redis", "Docker"],
+    //   imageUrl: "https://images.pexels.com/photos/1482061/pexels-photo-1482061.jpeg?auto=compress&cs=tinysrgb&w=800",
+    //   demoUrl: "https://demo.example.com",
+    //   githubUrl: "https://github.com/example"
+    // },
+    // {
+    //   id: 5,
+    //   title: "Learning Management System",
+    //   description: "Educational platform with video streaming, progress tracking, and interactive assessments.",
+    //   technologies: ["React Native", "Django", "PostgreSQL", "AWS S3"],
+    //   imageUrl: "https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800",
+    //   demoUrl: "https://demo.example.com",
+    //   githubUrl: "https://github.com/example"
+    // },
+    // {
+    //   id: 6,
+    //   title: "Travel Booking App",
+    //   description: "Complete travel booking solution with hotel reservations, flight booking, and itinerary planning.",
+    //   technologies: ["Flutter", "Node.js", "MySQL", "Stripe"],
+    //   imageUrl: "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800",
+    //   demoUrl: "https://demo.example.com",
+    //   githubUrl: "https://github.com/example"
+    // }
   ];
 
   return (
@@ -69,11 +73,18 @@ const Projects: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills and expertise in mobile development
+            Here are some of my recent projects that showcase my skills and
+            expertise in mobile development
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          className={`grid gap-8 ${
+            projects.length === 2
+              ? "grid-cols-1 md:grid-cols-2 justify-center"
+              : "md:grid-cols-2 lg:grid-cols-3"
+          }`}
+        >
           {projects.map((project) => (
             <div
               key={project.id}
@@ -121,7 +132,7 @@ const Projects: React.FC = () => {
                 <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, index) => (
                     <span
